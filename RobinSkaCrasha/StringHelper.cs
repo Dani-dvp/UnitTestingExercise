@@ -1,3 +1,4 @@
+
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
@@ -11,6 +12,10 @@ namespace RobinSkaCrasha
 {
     public class StringHelper
     {
+        public StringHelper()
+        {
+
+        }
         public string GetWord(string text, int x, char seperator = ' ')
         {
 
