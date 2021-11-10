@@ -10,9 +10,12 @@
             return arr[x];
         }
 
-        public List<string> StringToList(string text, char seperator = ' ')
+        public string[] StringToList(string text, char seperator = ' ')
         {
-            var textString = new List<string>();
+            var textString = text.Split(seperator);
+
+            textString.ToList();
+
             return textString;
         }
 
