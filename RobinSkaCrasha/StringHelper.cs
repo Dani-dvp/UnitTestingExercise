@@ -5,7 +5,9 @@
         public string GetWord(string text, int x, char seperator = ' ')
         {
 
-            return string.Empty;
+            var arr = text.Split(seperator);
+
+            return arr[x];
         }
 
         public List<string> StringToList(string text, char seperator = ' ')
