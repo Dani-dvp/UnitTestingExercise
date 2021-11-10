@@ -1,4 +1,6 @@
-﻿namespace RobinSkaCrasha
+﻿using System.Collections.Generic;
+
+namespace RobinSkaCrasha
 {
     public class StringHelper
     {
