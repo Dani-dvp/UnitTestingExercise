@@ -30,7 +30,11 @@ namespace RobinSkaCrasha
 
         public string RemoveWord(string text, string remove)
         {
-            return string.Empty;
+            var index = text.IndexOf(remove);
+
+            text.Remove(index);
+
+            return text;
         }
 
         public string RemoveWordAt(string text, int pos)
