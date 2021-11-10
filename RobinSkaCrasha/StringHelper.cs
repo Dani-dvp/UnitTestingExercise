@@ -1,4 +1,12 @@
-﻿using System.Collections.Generic;
+
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Net.Http;
+using System.Threading;
+using System.Threading.Tasks;
+
 
 namespace RobinSkaCrasha
 {
@@ -11,12 +19,17 @@ namespace RobinSkaCrasha
         public string GetWord(string text, int x, char seperator = ' ')
         {
 
-            return string.Empty;
+            var arr = text.Split(seperator);
+
+            return arr[x];
         }
 
-        public List<string> StringToList(string text, char seperator = ' ')
+        public string[] StringToList(string text, char seperator = ' ')
         {
-            var textString = new List<string>();
+            var textString = text.Split(seperator);
+
+            textString.ToList();
+
             return textString;
         }
 
